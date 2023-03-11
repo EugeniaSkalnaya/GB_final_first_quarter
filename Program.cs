@@ -18,7 +18,7 @@ void FillNewArray(string[] oldArray, string[] newArray, int lengthLimit)
     }
 }
 
-int CheckArrayLength(string[] array, int lengthLimit)
+int ShortArrayLength(string[] array, int lengthLimit)
 {
     int result = 0;
     for (int i = 0; i < array.Length; i++)
@@ -41,7 +41,7 @@ int GetNumber(string text)
 }
 
 int lengthLimit = GetNumber("Введите длину-ограничитель элемента массива");
-int numbersItems = CheckArrayLength(GivenArray, lengthLimit);
+int numbersItems = ShortArrayLength(GivenArray, lengthLimit);
 
 string[] newShortArray = new string[numbersItems];
 
